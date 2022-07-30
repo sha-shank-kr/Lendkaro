@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>amazon</title>
+  <meta name="author" content="Shashank Kumar,Utkarsh Pndey & Ashish kumar">
+  <meta name="description" content="Here you can lend and borrow any thing having a price under 10,000.">
+  <link rel="stylesheet" href="/css/amazon.css">
+  <link rel="stylesheet" href="/css/page.css">
+  <link rel="icon" href="/img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@200&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  {{!-- <h1>Just testing if there is any problem with iteration in handlebars {{loc1}},hohohoh {{loc2}}</h1> --}}
+  {{#each udata}}
+  <h1>Just testing{{loc1}}, {{loc2}}</h1>
+  <div class="pallete">
+    <div class="type">
+      <p>{{this.product}}</p>
+    </div>
+    <div class="extrades">
+      <p>{{this.extrades}}</p>
+    </div>
+    {{!-- <div class="status">
+      <p>Status: </p>
+    </div> --}}
+    <div class="max">
+      <p> Availability(in days): {{this.maxrentTime}}</p>
+    </div>
+    <div class="rate">
+      <p>Rent(per day): {{this.perDay}}</p>
+    </div>
+    <a class="fcc-btn" href="mailto:{{this.email}}?subject=Congratulation!%20Someone%20wants%20to%20borrow%20your%20item.&body=Hello%20{{this.name}}!%0D%0AYour%20item%20is%20someone's%20urgent%20need.%20You%20may%20reply%20back%20to%20this%20mail%20to%20confirm%20your%20consent%20and%20carry%20forward%20this%20deal.%0D%0A%0D%0AThanks%20and%20Regards.">Notify Lender</a>
+    </div>
+  {{/each}}
+  <hr style="height:2px;color:rgb(148, 69, 69);background-color:rgb(241, 109, 109)">
+  <p>Other products in this category are:</p>
+  {{#each odata}}
+  <div class="pallete">
+    <div class="type">
+      <p>{{this.product}}</p>
+    </div>
+    <div class="extrades">
+      <p>{{this.extrades}}</p>
+    </div>
+    {{!-- <div class="status">
+      <p>Status: </p>
+    </div> --}}
+    <div class="max">
+      <p> Availability(in days): {{this.maxrentTime}}</p>
+    </div>
+    <div class="rate">
+      <p>Rent(per day): {{this.perDay}}</p>
+    </div>
+    <a class="fcc-btn" href="mailto:{{this.email}}?subject=Congratulation!%20Someone%20wants%20to%20borrow%20your%20item.&body=Hello%20{{this.name}}!%0D%0AYour%20item%20is%20someone's%20urgent%20need.%20You%20may%20reply%20back%20to%20this%20mail%20to%20confirm%20your%20consent%20and%20carry%20forward%20this%20deal.%0D%0A%0D%0AThanks%20and%20Regards.">Notify Lender</a>
+    </div>
+  {{/each}}
+  <a class="fcc-btn1" href="/consumer/thankyou">Done</a>
+</body>
+</html>

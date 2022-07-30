@@ -1,0 +1,32 @@
+body{
+  background: linear-gradient(135deg, #D6ED17FF, #606060FF);
+}
+.button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #f59b5c;
+  padding: 30px;
+  border-radius: 10px;
+}
+.button a{
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  text-align: justify;
+}
+.fcc-btn {
+  background-color: #199319;
+  color: white;
+  padding: 1px 25px;
+  text-decoration: none;
+}
+.fcc-btn1 {
+  background-color: #2a422a;
+  color: white;
+  padding: 2px 25px;
+  text-decoration: none;
+  margin-left: 20px;
+}

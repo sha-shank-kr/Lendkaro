@@ -1,0 +1,27 @@
+{
+  "name": "hackoverflow-hackathon",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "express": "^4.18.1",
+    "hbs": "^4.2.0",
+    "jquery": "^3.6.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.2.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pandey-utkarsh/HackOverflow-hackathon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pandey-utkarsh/HackOverflow-hackathon/issues"
+  },
+  "homepage": "https://github.com/Pandey-utkarsh/HackOverflow-hackathon#readme",
+  "description": ""
+}
